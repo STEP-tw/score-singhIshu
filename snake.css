@@ -29,3 +29,8 @@ p {
   text-align: center;
   font-size: 30px;
 }
+
+.super-food {
+  background-color: green;
+  border-radius: 50%;
+}
