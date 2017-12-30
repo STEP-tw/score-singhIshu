@@ -4,6 +4,7 @@ Game=function(topLeft,bottomRight) {
   this.snake={};
   this.food={};
   this.score = 0;
+  this.increment = 10;
 }
 
 Game.prototype.addSnake=function(snake) {
@@ -62,5 +63,5 @@ Game.prototype.getScore = function() {
 }
 
 Game.prototype.updateScore= function() {
-  return this.score += 10;
+  return this.score += this.increment;
 }
