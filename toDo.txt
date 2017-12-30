@@ -1,0 +1,19 @@
+## Objective
+
+1.Update the score as the snake eats a piece of food.
+2.Update this information at the bottom of the snake viewport.
+
+
+## Inputs Required
+
+1. Latest Score.
+2. Current updates of the Position of head and food.
+
+## Procedure
+
+Set the initial score as zero.
+Display the initial score as zero at the bottom of the snake viewport.
+Check if the snake has eaten the food or not after every move.
+Increase the score by 10 as soon as the snake eats the food.
+Update the score on the display Page.
+Show the score on the display.
