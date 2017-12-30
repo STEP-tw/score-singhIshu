@@ -2,7 +2,7 @@ let snake=undefined;
 let food=undefined;
 let numberOfRows=60;
 let numberOfCols=120;
-let score = 0;
+let game = new Game();
 
 let animator=undefined;
 
@@ -14,8 +14,8 @@ const animateSnake=function() {
   unpaintSnake(oldTail);
   paintHead(head);
   if(head.isSameCoordAs(food)) {
-    score = score + 10;
-    updateScoreOnDisplay(score);
+    game.updateScore();
+    updateScoreOnDisplay(game.score);
     snake.grow();
     createFood(numberOfRows,numberOfCols);
     drawFood(food);
